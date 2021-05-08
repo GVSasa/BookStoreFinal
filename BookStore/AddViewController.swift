@@ -61,6 +61,9 @@ class AddViewController: UIViewController {
             }
             
         }
+        else{
+            self.title = "Add Book"
+        }
         
         //Do any additional setup after loading the view
     }
