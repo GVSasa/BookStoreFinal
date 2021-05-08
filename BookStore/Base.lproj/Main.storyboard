@@ -260,7 +260,7 @@
                     <navigationItem key="navigationItem" id="1DU-wY-zUu"/>
                     <connections>
                         <outlet property="authorText" destination="NjC-ie-CRQ" id="zTY-pp-Fab"/>
-                        <outlet property="descriptionText" destination="ggp-X6-u9X" id="xV4-Rm-pDe"/>
+                        <outlet property="descriptionText" destination="eb7-i1-hjC" id="n6S-Qj-q0b"/>
                         <outlet property="pagesText" destination="Yo8-BF-lR6" id="MIJ-Ic-ZYE"/>
                         <outlet property="switchOutlet" destination="avP-kn-zNg" id="5zJ-8h-nmn"/>
                         <outlet property="titleText" destination="rbk-gI-Mpb" id="zfw-t9-abA"/>
@@ -290,7 +290,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="q4g-xc-u1P"/>
+        <segue reference="Mxb-qI-bYg"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="plus" catalog="system" width="128" height="113"/>
