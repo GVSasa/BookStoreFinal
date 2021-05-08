@@ -8,7 +8,7 @@
 import UIKit
 
 
-class AddViewController: UIViewController {
+class AddViewController: UIViewController , UITextFieldDelegate{
     
     
     @IBOutlet weak var titleText: UITextField!
@@ -43,8 +43,19 @@ class AddViewController: UIViewController {
         
     }
    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
     override func viewDidLoad(){
         super.viewDidLoad()
+        
+        titleText.delegate = self
+        authorText.delegate = self
+        pagesText.delegate = self
+        
+        
         if editBook {
             print("Print Error")
             self.title = "Edit Book"
@@ -55,7 +66,7 @@ class AddViewController: UIViewController {
             
             if book.readThisBook {
                 switchOutlet.isOn = true
-                
+            
             } else {
                 switchOutlet.isOn = false
             }
